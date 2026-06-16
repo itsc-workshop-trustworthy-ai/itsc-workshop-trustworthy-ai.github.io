@@ -113,14 +113,6 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 .topic { padding:24px; border:1px solid var(--line); border-radius:20px; background:#fff; box-shadow:0 12px 32px rgba(6,40,76,.06); }
 .topic b { display:block; color:var(--navy); margin-bottom:8px; font-size:18px; }
 .topic span { color:var(--muted); }
-.schedule-wrap { overflow:auto; border-radius:22px; border:1px solid var(--line); background:white; box-shadow:0 18px 44px rgba(6,40,76,.08); }
-table { width:100%; border-collapse:collapse; min-width:820px; }
-th { text-align:left; background:var(--navy); color:#fff; padding:16px; font-size:14px; letter-spacing:.05em; text-transform:uppercase; }
-td { padding:18px 16px; vertical-align:top; border-bottom:1px solid var(--line); }
-td:first-child span { display:inline-block; padding:5px 10px; border-radius:999px; background:#e9f3fc; color:var(--blue); font-weight:800; font-size:13px; white-space:nowrap; }
-td small { color:#53657a; font-size:14px; }
-.break-row td { background:#fff7df; color:#705000; font-weight:800; text-align:center; }
-.break-row td:first-child span { background:var(--gold); color:#1d1d1d; }
 .speakers { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
 .speaker-card { display:grid; grid-template-columns:58px 1fr; gap:18px; align-items:start; padding:22px; border:1px solid var(--line); border-radius:20px; background:white; box-shadow:0 10px 30px rgba(6,40,76,.06); }
 .avatar { width:58px; height:58px; border-radius:18px; display:grid; place-items:center; background:linear-gradient(135deg,#dff0ff,#ffffff); color:var(--blue); font-weight:900; font-size:23px; border:1px solid var(--line); }
@@ -144,7 +136,7 @@ td small { color:#53657a; font-size:14px; }
   <div class="container nav">
     <a class="brand" href="#top"><span class="brand-mark">AI</span><span>Trustworthy AI for Traffic</span></a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#overview">Overview</a><a href="#topics">Topics</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
+      <a href="#overview">Overview</a><a href="#topics">Topics</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
     </nav>
   </div>
 </header>
@@ -154,11 +146,11 @@ td small { color:#53657a; font-size:14px; }
     <div>
       <div class="kicker"><span class="dot"></span> IEEE ITSC 2026 Workshop</div>
       <h1>Trustworthy AI for Traffic Operation and Control</h1>
-      <p class="subtitle">A focused workshop on safe, robust, fair, and privacy-aware AI for traffic sensing, prediction, and adaptive control in complex urban mobility systems.</p>
+      <p class="subtitle">A focused workshop on trustworthy AI for traffic sensing, prediction, and adaptive control.</p>
       <div class="meta-grid">
         <div class="meta-card"><small>Conference</small><strong>IEEE ITSC 2026</strong></div>
         <div class="meta-card"><small>Location</small><strong>Napoli, Italy</strong></div>
-        <div class="meta-card"><small>Program Length</small><strong>2.5 hours</strong></div>
+        <div class="meta-card"><small>Format</small><strong>Invited Workshop</strong></div>
       </div>
     </div>
     <aside>
@@ -166,9 +158,9 @@ td small { color:#53657a; font-size:14px; }
       <div class="quick-card">
         <h2>Workshop Focus</h2>
         <ul>
-          <li>Trustworthy AI for traffic sensing and control</li>
-          <li>Safety assurance, robustness, fairness, and privacy</li>
-          <li>Invited talks from leading researchers and practitioners</li>
+          <li>AI for traffic sensing and control</li>
+          <li>Safety, robustness, fairness, and privacy</li>
+          <li>Invited research talks</li>
         </ul>
       </div>
     </aside>
@@ -176,75 +168,17 @@ td small { color:#53657a; font-size:14px; }
 </section>
 <section class="section" id="overview">
   <div class="container">
-    <div class="section-head"><div><div class="eyebrow">Workshop Overview</div><h2>Why trustworthy AI matters for urban traffic systems</h2></div></div>
-    <div class="abstract"><p>The rapid integration of artificial intelligence (AI) into transportation systems holds great potential for transforming urban mobility, especially with the explosion of transportation data and the growing capabilities of autonomous vehicles. Unlike conventional strategies, AI-based traffic sensing and control leverage massive historical and real-time data collected from diverse sensors to train learning-based algorithms for accurate state estimation, prediction, and adaptive decision-making. These algorithms are well-suited to handle heterogeneous transportation data, interpret human-dominated environments, and make informed decisions, ultimately helping alleviate congestion in complex, dynamic urban traffic systems.</p><p>Despite these technological advances, the practical adoption of AI in transportation systems has lagged, largely due to concerns about trustworthiness. Specifically, the inherent black-box nature of many AI algorithms introduces substantial challenges related to safety assurance, robustness, and data privacy. These challenges directly impact public trust and system reliability, posing significant barriers to the widespread implementation of AI in transportation systems.</p><p>This workshop aims to bridge gaps in the design, deployment, and regulation of AI for traffic sensing and control. The program features invited talks from leading researchers and practitioners, offering a focused venue to share emerging results, practical lessons, and perspectives on trustworthy AI in transportation.</p></div>
+    <div class="section-head"><div><div class="eyebrow">Workshop Overview</div><h2>Trustworthy AI for traffic systems</h2></div></div>
+    <div class="abstract"><p>AI is becoming central to traffic sensing, prediction, and control, especially as transportation systems generate richer real-time data and interact with connected and automated vehicles.</p><p>This workshop focuses on practical and trustworthy AI methods: systems that are safe, robust, fair, privacy-aware, interpretable, and reliable enough for real-world traffic operation.</p></div>
   </div>
 </section>
 <section class="section alt" id="topics">
   <div class="container">
-    <div class="section-head"><div><div class="eyebrow">Themes</div><h2>Core discussion topics</h2></div><p class="lead">The workshop emphasizes deployable AI methods that can support decision-making while maintaining reliability and public trust.</p></div>
+    <div class="section-head"><div><div class="eyebrow">Themes</div><h2>Core discussion topics</h2></div><p class="lead">Deployable AI methods for reliable traffic decision-making.</p></div>
     <div class="topic-grid">
-      <div class="topic"><b>AI-based traffic sensing</b><span>Learning from heterogeneous historical and real-time data collected by diverse transportation sensors.</span></div>
-      <div class="topic"><b>Prediction and control</b><span>State estimation, traffic prediction, and adaptive decision-making for dynamic urban networks.</span></div>
-      <div class="topic"><b>Trustworthiness</b><span>Safety assurance, robustness, fairness, data privacy, interpretability, and system reliability.</span></div>
-    </div>
-  </div>
-</section>
-<section class="section" id="program">
-  <div class="container">
-    <div class="section-head"><div><div class="eyebrow">Program</div><h2>Final workshop schedule</h2></div><p class="lead">The 2.5-hour program includes an opening session, invited talks, a coffee break, and closing remarks.</p></div>
-    <div class="schedule-wrap">
-      <table aria-label="Workshop program schedule">
-        <thead><tr><th>Session</th><th>Duration</th><th>Presentation</th><th>Chair</th></tr></thead>
-        <tbody><tr class="">
-  <td><span>Opening Session</span></td>
-  <td>10 min</td>
-  <td><strong>Opening speech</strong><br><small>Prof. Kaidi Yang</small></td>
-  <td>—</td>
-</tr>
-<tr class="">
-  <td><span>Invited Session</span></td>
-  <td>25 min</td>
-  <td><strong>Thinking Beyond Robustness: Designing Antifragile and Fair Road Transport Systems</strong><br><small>Prof. Michail Makridis, ETH Zurich</small></td>
-  <td>Prof. Kaidi Yang</td>
-</tr>
-<tr class="">
-  <td><span>Invited Session</span></td>
-  <td>25 min</td>
-  <td><strong>Foundation models for autonomous vehicles</strong><br><small>Prof. Ziran Wang, Purdue University</small></td>
-  <td>Prof. Kaidi Yang</td>
-</tr>
-<tr class="break-row">
-  <td><span>Break</span></td>
-  <td>10 min</td>
-  <td><strong>Coffee Break</strong></td>
-  <td></td>
-</tr>
-<tr class="">
-  <td><span>Invited Session</span></td>
-  <td>25 min</td>
-  <td><strong>Meta-MSCC: A foundation model for adaptive CAV control in highway weaving segments</strong><br><small>Prof. Kun Gao, Chalmers University of Technology</small></td>
-  <td>Mr. Jingyuan Zhou</td>
-</tr>
-<tr class="">
-  <td><span>Invited Session</span></td>
-  <td>25 min</td>
-  <td><strong>Socially Aware Autonomous Driving in Human-Oriented Transportation Systems</strong><br><small>Prof. Kaidi Yang, National University of Singapore</small></td>
-  <td>Mr. Jingyuan Zhou</td>
-</tr>
-<tr class="">
-  <td><span>Invited Session</span></td>
-  <td>25 min</td>
-  <td><strong>The APEX project – accelerating simulations through AI for policy evaluation in highly disruptive scenarios</strong><br><small>Dr. Serio Angelo Maria Agriesti, Technical University of Denmark</small></td>
-  <td>Mr. Jingyuan Zhou</td>
-</tr>
-<tr class="">
-  <td><span>Closing Session</span></td>
-  <td>5 min</td>
-  <td><strong>Closing remarks</strong><br><small>Prof. Kaidi Yang</small></td>
-  <td>—</td>
-</tr></tbody>
-      </table>
+      <div class="topic"><b>AI-based traffic sensing</b><span>Learning from heterogeneous historical and real-time traffic data.</span></div>
+      <div class="topic"><b>Prediction and control</b><span>State estimation, forecasting, and adaptive traffic decisions.</span></div>
+      <div class="topic"><b>Trustworthiness</b><span>Safety, robustness, fairness, privacy, interpretability, and reliability.</span></div>
     </div>
   </div>
 </section>
