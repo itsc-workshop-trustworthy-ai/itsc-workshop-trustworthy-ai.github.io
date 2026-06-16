@@ -81,7 +81,7 @@ a { color:inherit; text-decoration:none; }
 .container { width:min(1120px,92vw); margin:0 auto; }
 .topbar { position:sticky; top:0; z-index:20; backdrop-filter:blur(14px); background:rgba(255,255,255,.88); border-bottom:1px solid rgba(216,227,239,.9); }
 .nav { height:70px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
-.brand { display:flex; align-items:center; gap:14px; font-weight:800; color:var(--navy); letter-spacing:.2px; }
+.brand { display:flex; align-items:center; gap:14px; max-width:52ch; font-weight:800; color:var(--navy); letter-spacing:.2px; line-height:1.18; }
 .nav-links { display:flex; gap:22px; font-size:14px; color:#30445f; }
 .nav-links a:hover { color:var(--blue); }
 .hero { position:relative; overflow:hidden; color:#fff; background:linear-gradient(90deg,rgba(4,29,56,.88) 0%,rgba(4,29,56,.7) 45%,rgba(4,29,56,.32) 100%), url("assets/naples-hero.jpg") center 58% / cover no-repeat; }
@@ -132,7 +132,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 <div class="workshop-page">
 <header class="topbar">
   <div class="container nav">
-    <a class="brand" href="#top"><span>Trustworthy AI for Traffic</span></a>
+    <a class="brand" href="#top"><span>Trustworthy AI for Traffic Operation and Control</span></a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#overview">Overview</a><a href="#topics">Topics</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
     </nav>
