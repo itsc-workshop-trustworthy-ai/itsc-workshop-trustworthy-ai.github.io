@@ -113,10 +113,13 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 .schedule th { text-align:left; color:#fff; background:var(--navy); font-size:14px; letter-spacing:.04em; text-transform:uppercase; }
 .schedule .session-row td { padding:9px 16px; text-align:center; background:#e7edf4; color:var(--navy); font-weight:900; }
 .schedule .break-row td { padding:9px 16px; text-align:center; background:var(--gold); color:#1d1d1d; font-weight:900; }
-.schedule .duration { width:130px; font-weight:900; color:var(--navy); white-space:nowrap; }
+.schedule .time { width:170px; font-weight:900; color:var(--navy); white-space:nowrap; }
+.schedule .venue { width:250px; color:#34465d; }
 .schedule .chair { width:190px; color:#34465d; }
 .schedule strong { color:var(--navy); }
 .schedule small { display:block; margin-top:4px; color:#53657a; font-size:15px; }
+.schedule ul { margin:0; padding-left:18px; }
+.schedule li + li { margin-top:10px; }
 .speakers { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
 .speaker-card { display:grid; grid-template-columns:58px 1fr; gap:18px; align-items:start; padding:22px; border:1px solid var(--line); border-radius:20px; background:white; box-shadow:0 10px 30px rgba(6,40,76,.06); }
 .avatar { width:58px; height:58px; border-radius:18px; display:grid; place-items:center; background:linear-gradient(135deg,#dff0ff,#ffffff); color:var(--blue); font-weight:900; font-size:23px; border:1px solid var(--line); }
@@ -179,56 +182,48 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 </section>
 <section class="section alt" id="program">
   <div class="container">
-    <div class="section-head"><div><div class="eyebrow">Program</div><h2>Workshop program</h2></div><p class="lead">A 2.5-hour program with invited talks, a coffee break, and closing remarks.</p></div>
+    <div class="section-head"><div><div class="eyebrow">Program</div><h2>Workshop program</h2></div><p class="lead">September 15, 2026, with two workshop sessions in Urania 3 Room and lunch at Catering Area Stazione Marittima.</p></div>
     <div class="schedule-wrap">
       <table class="schedule" aria-label="Workshop program schedule">
         <tbody>
-          <tr class="session-row"><td colspan="3">Opening Session</td></tr>
-          <tr>
-            <td class="duration">10 min</td>
-            <td><strong>Opening speech</strong><small>Prof. Kaidi Yang</small></td>
-            <td class="chair">-</td>
-          </tr>
-          <tr class="session-row"><td colspan="3">Invited Session</td></tr>
-          <tr>
-            <th>Duration</th>
-            <th>Presentation</th>
-            <th>Chair</th>
-          </tr>
-          <tr>
-            <td class="duration">25 min</td>
-            <td><strong>Constrained traffic signal control under competing public transport priority requests via safe reinforcement learning</strong><small>Prof. Meng Wang, TU Dresden</small></td>
-            <td class="chair" rowspan="2">Prof. Kaidi Yang</td>
-          </tr>
-          <tr>
-            <td class="duration">25 min</td>
-            <td><strong>From Cross-Domain Data to Emergent Traffic: AI Agents and AI Networks</strong><small>Prof. Xishun Liao, Central Florida University</small></td>
-          </tr>
-          <tr class="break-row"><td colspan="3">Coffee Break (10 min)</td></tr>
-          <tr class="session-row"><td colspan="3">Invited Session</td></tr>
           <tr>
             <th>Time</th>
-            <th>Presentation</th>
+            <th>Program</th>
+            <th>Venue</th>
             <th>Chair</th>
           </tr>
           <tr>
-            <td class="duration">25 min</td>
-            <td><strong>Meta-MSCC: A foundation model for adaptive CAV control in highway weaving segments</strong><small>Prof. Kun Gao, Chalmers University of Technology</small></td>
-            <td class="chair" rowspan="3">Mr. Jingyuan Zhou</td>
+            <td class="time">11:30 - 13:00</td>
+            <td>
+              <strong>Trustworthy AI for Traffic Operation and Control</strong>
+              <ul>
+                <li><strong>Opening speech</strong><small>Prof. Kaidi Yang</small></li>
+                <li><strong>Constrained traffic signal control under competing public transport priority requests via safe reinforcement learning</strong><small>Prof. Meng Wang, TU Dresden</small></li>
+                <li><strong>From Cross-Domain Data to Emergent Traffic: AI Agents and AI Networks</strong><small>Prof. Xishun Liao, Central Florida University</small></li>
+              </ul>
+            </td>
+            <td class="venue">Urania 3 Room<small>WoL9</small></td>
+            <td class="chair">Prof. Kaidi Yang</td>
           </tr>
-          <tr>
-            <td class="duration">25 min</td>
-            <td><strong>Socially Aware Autonomous Driving in Human-Oriented Transportation Systems</strong><small>Prof. Kaidi Yang, National University of Singapore</small></td>
-          </tr>
-          <tr>
-            <td class="duration">25 min</td>
-            <td><strong>The APEX project – accelerating simulations through AI for policy evaluation in highly disruptive scenarios</strong><small>Dr. Serio Angelo Maria Agriesti, Technical University of Denmark</small></td>
-          </tr>
-          <tr class="session-row"><td colspan="3">Closing Session</td></tr>
-          <tr>
-            <td class="duration">5 min</td>
-            <td><strong>Closing remarks</strong><small>Prof. Kaidi Yang</small></td>
+          <tr class="break-row">
+            <td class="time">13:00 - 14:00</td>
+            <td><strong>Lunch break</strong></td>
+            <td class="venue">Catering Area Stazione Marittima<small>WoBr2</small></td>
             <td class="chair">-</td>
+          </tr>
+          <tr>
+            <td class="time">14:00 - 15:00</td>
+            <td>
+              <strong>Trustworthy AI for Traffic Operation and Control</strong>
+              <ul>
+                <li><strong>Meta-MSCC: A foundation model for adaptive CAV control in highway weaving segments</strong><small>Prof. Kun Gao, Chalmers University of Technology</small></li>
+                <li><strong>Socially Aware Autonomous Driving in Human-Oriented Transportation Systems</strong><small>Prof. Kaidi Yang, National University of Singapore</small></li>
+                <li><strong>The APEX project – accelerating simulations through AI for policy evaluation in highly disruptive scenarios</strong><small>Dr. Serio Angelo Maria Agriesti, Technical University of Denmark</small></li>
+                <li><strong>Closing remarks</strong><small>Prof. Kaidi Yang</small></li>
+              </ul>
+            </td>
+            <td class="venue">Urania 3 Room<small>WoL21</small></td>
+            <td class="chair">Mr. Jingyuan Zhou</td>
           </tr>
         </tbody>
       </table>
