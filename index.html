@@ -120,20 +120,13 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 .schedule small { display:block; margin-top:4px; color:#53657a; font-size:15px; }
 .schedule ul { margin:0; padding-left:18px; }
 .schedule li + li { margin-top:10px; }
-.speakers { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
-.speaker-card { display:grid; grid-template-columns:58px 1fr; gap:18px; align-items:start; padding:22px; border:1px solid var(--line); border-radius:20px; background:white; box-shadow:0 10px 30px rgba(6,40,76,.06); }
-.avatar { width:58px; height:58px; border-radius:18px; display:grid; place-items:center; background:linear-gradient(135deg,#dff0ff,#ffffff); color:var(--blue); font-weight:900; font-size:23px; border:1px solid var(--line); }
-.speaker-card h3 { margin:0; color:var(--navy); font-size:20px; }
-.affil { margin:2px 0 10px; color:var(--blue); font-weight:700; }
-.speaker-card p { margin:0; color:#47586d; }
-.speaker-card span { font-weight:800; color:var(--navy); }
 .organizers { display:grid; grid-template-columns:1fr 1fr; gap:18px; }
 .organizer { border-radius:20px; background:white; border:1px solid var(--line); padding:24px; }
 .organizer h3 { margin:0 0 4px; color:var(--navy); }
 .footer { padding:34px 0; background:#041d38; color:#b8d8f4; }
 .footer strong { color:#fff; }
 @media (max-width:880px) {
-  .nav-links { display:none; } .hero-inner { grid-template-columns:1fr; min-height:auto; } .meta-grid,.speakers,.organizers { grid-template-columns:1fr; } .logo-panel { order:-1; }
+  .nav-links { display:none; } .hero-inner { grid-template-columns:1fr; min-height:auto; } .meta-grid,.organizers { grid-template-columns:1fr; } .logo-panel { order:-1; }
 }
 </style>
 </head>
@@ -143,7 +136,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
   <div class="container nav">
     <a class="brand" href="#top"><span>Trustworthy AI for Traffic Operation and Control</span></a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#overview">Overview</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
+      <a href="#overview">Overview</a><a href="#program">Program</a><a href="#organizers">Organizers</a>
     </nav>
   </div>
 </header>
@@ -233,50 +226,6 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
         </tbody>
       </table>
     </div>
-  </div>
-</section>
-<section class="section alt" id="speakers">
-  <div class="container">
-    <div class="speakers"><article class="speaker-card">
-  <div class="avatar">M</div>
-  <div>
-    <h3>Prof. Meng Wang</h3>
-    <p class="affil">TU Dresden</p>
-    <p><span>Talk:</span> Constrained traffic signal control under competing public transport priority requests via safe reinforcement learning</p>
-  </div>
-</article>
-<article class="speaker-card">
-  <div class="avatar">X</div>
-  <div>
-    <h3>Prof. Xishun Liao</h3>
-    <p class="affil">Central Florida University</p>
-    <p><span>Talk:</span> From Cross-Domain Data to Emergent Traffic: AI Agents and AI Networks</p>
-  </div>
-</article>
-<article class="speaker-card">
-  <div class="avatar">K</div>
-  <div>
-    <h3>Prof. Kun Gao</h3>
-    <p class="affil">Chalmers University of Technology</p>
-    <p><span>Talk:</span> Meta-MSCC: A foundation model for adaptive CAV control in highway weaving segments</p>
-  </div>
-</article>
-<article class="speaker-card">
-  <div class="avatar">K</div>
-  <div>
-    <h3>Prof. Kaidi Yang</h3>
-    <p class="affil">National University of Singapore</p>
-    <p><span>Talk:</span> Socially Aware Autonomous Driving in Human-Oriented Transportation Systems</p>
-  </div>
-</article>
-<article class="speaker-card">
-  <div class="avatar">S</div>
-  <div>
-    <h3>Dr. Serio Angelo Maria Agriesti</h3>
-    <p class="affil">Technical University of Denmark</p>
-    <p><span>Talk:</span> The APEX project – accelerating simulations through AI for policy evaluation in highly disruptive scenarios</p>
-  </div>
-</article></div>
   </div>
 </section>
 <section class="section" id="organizers">
