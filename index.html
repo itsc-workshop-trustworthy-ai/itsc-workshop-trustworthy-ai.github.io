@@ -107,10 +107,6 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 .lead { max-width:780px; font-size:18px; color:#40536b; }
 .abstract { columns:2 360px; column-gap:44px; color:#34465d; font-size:17px; }
 .abstract p { margin-top:0; }
-.topic-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-.topic { padding:24px; border:1px solid var(--line); border-radius:20px; background:#fff; box-shadow:0 12px 32px rgba(6,40,76,.06); }
-.topic b { display:block; color:var(--navy); margin-bottom:8px; font-size:18px; }
-.topic span { color:var(--muted); }
 .schedule-wrap { overflow:auto; border-radius:20px; border:1px solid var(--line); background:#fff; box-shadow:0 14px 36px rgba(6,40,76,.07); }
 .schedule { width:100%; min-width:860px; border-collapse:collapse; }
 .schedule th, .schedule td { padding:14px 16px; border-bottom:1px solid var(--line); vertical-align:top; }
@@ -134,7 +130,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 .footer { padding:34px 0; background:#041d38; color:#b8d8f4; }
 .footer strong { color:#fff; }
 @media (max-width:880px) {
-  .nav-links { display:none; } .hero-inner { grid-template-columns:1fr; min-height:auto; } .meta-grid,.topic-grid,.speakers,.organizers { grid-template-columns:1fr; } .logo-panel { order:-1; }
+  .nav-links { display:none; } .hero-inner { grid-template-columns:1fr; min-height:auto; } .meta-grid,.speakers,.organizers { grid-template-columns:1fr; } .logo-panel { order:-1; }
 }
 </style>
 </head>
@@ -144,7 +140,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
   <div class="container nav">
     <a class="brand" href="#top"><span>Trustworthy AI for Traffic Operation and Control</span></a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#overview">Overview</a><a href="#topics">Topics</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
+      <a href="#overview">Overview</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
     </nav>
   </div>
 </header>
@@ -180,17 +176,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
     <div class="abstract"><p>AI is becoming central to traffic sensing, prediction, and control, especially as transportation systems generate richer real-time data and interact with connected and automated vehicles.</p><p>This workshop focuses on practical and trustworthy AI methods: systems that are safe, robust, fair, privacy-aware, interpretable, and reliable enough for real-world traffic operation.</p></div>
   </div>
 </section>
-<section class="section alt" id="topics">
-  <div class="container">
-    <div class="section-head"><div><div class="eyebrow">Themes</div><h2>Core discussion topics</h2></div><p class="lead">Deployable AI methods for reliable traffic decision-making.</p></div>
-    <div class="topic-grid">
-      <div class="topic"><b>AI-based traffic sensing</b><span>Learning from heterogeneous historical and real-time traffic data.</span></div>
-      <div class="topic"><b>Prediction and control</b><span>State estimation, forecasting, and adaptive traffic decisions.</span></div>
-      <div class="topic"><b>Trustworthiness</b><span>Safety, robustness, fairness, privacy, interpretability, and reliability.</span></div>
-    </div>
-  </div>
-</section>
-<section class="section" id="program">
+<section class="section alt" id="program">
   <div class="container">
     <div class="section-head"><div><div class="eyebrow">Program</div><h2>Workshop program</h2></div><p class="lead">A 2.5-hour program with invited talks, a coffee break, and closing remarks.</p></div>
     <div class="schedule-wrap">
