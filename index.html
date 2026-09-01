@@ -111,6 +111,16 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
 .topic { padding:24px; border:1px solid var(--line); border-radius:20px; background:#fff; box-shadow:0 12px 32px rgba(6,40,76,.06); }
 .topic b { display:block; color:var(--navy); margin-bottom:8px; font-size:18px; }
 .topic span { color:var(--muted); }
+.schedule-wrap { overflow:auto; border-radius:20px; border:1px solid var(--line); background:#fff; box-shadow:0 14px 36px rgba(6,40,76,.07); }
+.schedule { width:100%; min-width:860px; border-collapse:collapse; }
+.schedule th, .schedule td { padding:14px 16px; border-bottom:1px solid var(--line); vertical-align:top; }
+.schedule th { text-align:left; color:#fff; background:var(--navy); font-size:14px; letter-spacing:.04em; text-transform:uppercase; }
+.schedule .session-row td { padding:9px 16px; text-align:center; background:#e7edf4; color:var(--navy); font-weight:900; }
+.schedule .break-row td { padding:9px 16px; text-align:center; background:var(--gold); color:#1d1d1d; font-weight:900; }
+.schedule .duration { width:130px; font-weight:900; color:var(--navy); white-space:nowrap; }
+.schedule .chair { width:190px; color:#34465d; }
+.schedule strong { color:var(--navy); }
+.schedule small { display:block; margin-top:4px; color:#53657a; font-size:15px; }
 .speakers { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
 .speaker-card { display:grid; grid-template-columns:58px 1fr; gap:18px; align-items:start; padding:22px; border:1px solid var(--line); border-radius:20px; background:white; box-shadow:0 10px 30px rgba(6,40,76,.06); }
 .avatar { width:58px; height:58px; border-radius:18px; display:grid; place-items:center; background:linear-gradient(135deg,#dff0ff,#ffffff); color:var(--blue); font-weight:900; font-size:23px; border:1px solid var(--line); }
@@ -134,7 +144,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
   <div class="container nav">
     <a class="brand" href="#top"><span>Trustworthy AI for Traffic Operation and Control</span></a>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#overview">Overview</a><a href="#topics">Topics</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
+      <a href="#overview">Overview</a><a href="#topics">Topics</a><a href="#program">Program</a><a href="#speakers">Speakers</a><a href="#organizers">Organizers</a>
     </nav>
   </div>
 </header>
@@ -148,7 +158,7 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
       <div class="meta-grid">
         <div class="meta-card"><small>Conference</small><strong>IEEE ITSC 2026</strong></div>
         <div class="meta-card"><small>Location</small><strong>Napoli, Italy</strong></div>
-        <div class="meta-card"><small>Format</small><strong>Invited Workshop</strong></div>
+        <div class="meta-card"><small>Program Length</small><strong>2.5 hours</strong></div>
       </div>
     </div>
     <aside>
@@ -180,23 +190,81 @@ h2 { margin:6px 0 0; font-size:clamp(28px,4vw,42px); line-height:1.12; color:var
     </div>
   </div>
 </section>
+<section class="section" id="program">
+  <div class="container">
+    <div class="section-head"><div><div class="eyebrow">Program</div><h2>Workshop program</h2></div><p class="lead">A 2.5-hour program with invited talks, a coffee break, and closing remarks.</p></div>
+    <div class="schedule-wrap">
+      <table class="schedule" aria-label="Workshop program schedule">
+        <tbody>
+          <tr class="session-row"><td colspan="3">Opening Session</td></tr>
+          <tr>
+            <td class="duration">10 min</td>
+            <td><strong>Opening speech</strong><small>Prof. Kaidi Yang</small></td>
+            <td class="chair">-</td>
+          </tr>
+          <tr class="session-row"><td colspan="3">Invited Session</td></tr>
+          <tr>
+            <th>Duration</th>
+            <th>Presentation</th>
+            <th>Chair</th>
+          </tr>
+          <tr>
+            <td class="duration">25 min</td>
+            <td><strong>Constrained traffic signal control under competing public transport priority requests via safe reinforcement learning</strong><small>Prof. Meng Wang, TU Dresden</small></td>
+            <td class="chair" rowspan="2">Prof. Kaidi Yang</td>
+          </tr>
+          <tr>
+            <td class="duration">25 min</td>
+            <td><strong>From Cross-Domain Data to Emergent Traffic: AI Agents and AI Networks</strong><small>Prof. Xishun Liao, Central Florida University</small></td>
+          </tr>
+          <tr class="break-row"><td colspan="3">Coffee Break (10 min)</td></tr>
+          <tr class="session-row"><td colspan="3">Invited Session</td></tr>
+          <tr>
+            <th>Time</th>
+            <th>Presentation</th>
+            <th>Chair</th>
+          </tr>
+          <tr>
+            <td class="duration">25 min</td>
+            <td><strong>Meta-MSCC: A foundation model for adaptive CAV control in highway weaving segments</strong><small>Prof. Kun Gao, Chalmers University of Technology</small></td>
+            <td class="chair" rowspan="3">Mr. Jingyuan Zhou</td>
+          </tr>
+          <tr>
+            <td class="duration">25 min</td>
+            <td><strong>Socially Aware Autonomous Driving in Human-Oriented Transportation Systems</strong><small>Prof. Kaidi Yang, National University of Singapore</small></td>
+          </tr>
+          <tr>
+            <td class="duration">25 min</td>
+            <td><strong>The APEX project – accelerating simulations through AI for policy evaluation in highly disruptive scenarios</strong><small>Dr. Serio Angelo Maria Agriesti, Technical University of Denmark</small></td>
+          </tr>
+          <tr class="session-row"><td colspan="3">Closing Session</td></tr>
+          <tr>
+            <td class="duration">5 min</td>
+            <td><strong>Closing remarks</strong><small>Prof. Kaidi Yang</small></td>
+            <td class="chair">-</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 <section class="section alt" id="speakers">
   <div class="container">
     <div class="section-head"><div><div class="eyebrow">Invited Speakers</div><h2>Speakers and presentation topics</h2></div></div>
     <div class="speakers"><article class="speaker-card">
   <div class="avatar">M</div>
   <div>
-    <h3>Dr. Michail Makridis</h3>
-    <p class="affil">ETH Zurich</p>
-    <p><span>Talk:</span> Thinking Beyond Robustness: Designing Antifragile and Fair Road Transport Systems</p>
+    <h3>Prof. Meng Wang</h3>
+    <p class="affil">TU Dresden</p>
+    <p><span>Talk:</span> Constrained traffic signal control under competing public transport priority requests via safe reinforcement learning</p>
   </div>
 </article>
 <article class="speaker-card">
-  <div class="avatar">Z</div>
+  <div class="avatar">X</div>
   <div>
-    <h3>Prof. Ziran Wang</h3>
-    <p class="affil">Purdue University</p>
-    <p><span>Talk:</span> Foundation models for autonomous vehicles</p>
+    <h3>Prof. Xishun Liao</h3>
+    <p class="affil">Central Florida University</p>
+    <p><span>Talk:</span> From Cross-Domain Data to Emergent Traffic: AI Agents and AI Networks</p>
   </div>
 </article>
 <article class="speaker-card">
